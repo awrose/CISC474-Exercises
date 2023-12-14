@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awrose/CISC474-Exercises.git"
+  },
+  "author": "Abigail Walters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awrose/CISC474-Exercises/issues"
+  },
+  "homepage": "https://github.com/awrose/CISC474-Exercises#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
