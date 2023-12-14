@@ -19,3 +19,27 @@ server.listen(port, function (error) {
  console.log('Server is listening on port' + port);
  }
 })
+
+var admin = require("firebase-admin");
+var serviceAccount = require("/etc/secrets/cisc474-ex-5-firebase-adminsdk-kpzv0-c930721ac5json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://cisc474-ex-5-default-rtdb.firebaseio.com"
+});
+
+
+const { getDatabase } = require('firebase-admin/database');
+const db = getDatabase();
+const ref = db.ref('server/saving-data/');
+const usersRef = ref.child('users');
+usersRef.set({
+ alanisawesome: {
+ date_of_birth: 'June 23, 1912',
+ full_name: 'Alan Turing'
+ },
+ gracehop: {
+ date_of_birth: 'December 9, 1906',
+ full_name: 'Grace Hopper'
+ }
+});

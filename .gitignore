@@ -128,3 +128,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+exercise-5/cisc474-ex-5-firebase-adminsdk-kpzv0-c930721ac5.json
